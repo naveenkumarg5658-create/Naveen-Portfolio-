@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Naveen Kumar — Business Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of a Business Analyst — projects, skills, resume and contact." />
+  <!-- Tailwind CDN (for quick prototyping) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
+    /* small progress bar style fallback (non-tailwind) */
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+  <!-- NAV -->
+  <header class="bg-white/60 backdrop-blur sticky top-0 z-40 border-b">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold">NK</div>
+        <div>
+          <div class="font-semibold">Naveen Kumar G</div>
+          <div class="text-xs text-gray-500">Business Analyst</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-indigo-600">About</a>
+        <a href="#skills" class="hover:text-indigo-600">Skills</a>
+        <a href="#projects" class="hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        <a href="#resume" class="px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm">Resume</a>
+      </nav>
+
+      <button id="navToggle" class="md:hidden p-2 rounded-lg border">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#about" class="py-2">About</a>
+        <a href="#skills" class="py-2">Skills</a>
+        <a href="#projects" class="py-2">Projects</a>
+        <a href="#contact" class="py-2">Contact</a>
+        <a href="#resume" class="py-2">Resume</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main class="max-w-6xl mx-auto px-6 py-12" id="home">
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-4xl md:text-4xl font-extrabold mb-3">Hi, I'm <span class="text-indigo-600">Naveen Kumar G </span></h1>
+        <p class="text-1g text-gray-600 mb-6">MBA student & aspiring Business Analyst — I turn business questions into data-driven decisions using SQL, Excel, Tableau, and Python. I enjoy building dashboards, running A/B analysis, and creating actionable insights.</p>
+
+        <div class="flex gap-3 items-center">
+          <a href="#projects" class="px-4 py-2 bg-indigo-600 text-white rounded-lg">View Projects</a>
+          <a href="#contact" class="px-4 py-2 border rounded-lg">Contact Me</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-2 gap-4 text-sm text-gray-600">
+          <div>
+            <div class="text-xs text-gray-500">Current Location</div>
+            <div>Chennai, Tamil Nadu</div>
+          </div>
+          <div>
+            <div class="text-xs text-gray-500">Availability</div>
+            <div>Available for a 6-month internship starting from December 12, 2025.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-md">
+        <div class="flex items-center gap-4">
+           <img src="https://github.com/naveenkumarg5658-create/Images-/blob/main/my%20photo%202.jpg?raw=true" alt="Profile" class="w-24 h-24 rounded-lg object-cover" />
+          <div>
+            <div class="font-semibold text-lg">Naveen Kumar</div>
+            <div class="text-xs text-gray-500">MBA STUDENT </div>
+          </div>
+        </div>
+
+        <dl class="mt-6 grid grid-cols-2 gap-4 text-sm text-gray-600">
+          <div>
+            <dt class="text-xs text-gray-400">Education</dt>
+            <dd>MBA - ANNA UNIVERSITY</dd>
+          </div>
+          <div>
+            <dt class="text-xs text-gray-400">Undergraduate</dt>
+            <dd>BBA - PSG CAS</dd>
+          </div>
+          <div>
+            <dt class="text-xs text-gray-400">Tools</dt>
+            <dd>Excel, SQL, Tableau </dd>
+          </div>
+          <div>
+            <dt class="text-xs text-gray-400">Email</dt>
+            <dd><a href="mailto:naveenkumarg5658@gmail.com" class="text-indigo-600">naveenkumarg5658@gmail.com</a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="mt-16">
+      <h2 class="text-2xl font-semibold mb-4">About</h2>
+      <p class="text-gray-600">I am an MBA student at Anna University with strong skills in data analysis and visualization. I have completed several projects analyzing business problems and building dashboards that communicate insights clearly. My strength is translating stakeholder questions into measurable metrics and visual stories.</p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="mt-10 grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+        <ul class="space-y-4">
+          <li>
+            <div class="flex justify-between mb-1 text-sm"><span>SQL</span><span>80%</span></div>
+            <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"><div style="width:80%" class="h-2 bg-indigo-600"></div></div>
+          </li>
+          <li>
+            <div class="flex justify-between mb-1 text-sm"><span>Excel (Advanced)</span><span>75%</span></div>
+            <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"><div style="width:75%" class="h-2 bg-indigo-600"></div></div>
+          </li>
+          <li>
+            <div class="flex justify-between mb-1 text-sm"><span>Tableau</span><span>70%</span></div>
+            <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"><div style="width:70%" class="h-2 bg-indigo-600"></div></div>
+          </li>
+          <li>
+            <div class="flex justify-between mb-1 text-sm"><span>Python (pandas)</span><span>40%</span></div>
+            <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden"><div style="width:40%" class="h-2 bg-indigo-600"></div></div>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Business & Communication</h3>
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li>Requirements gathering & stakeholder interviews</li>
+          <li>KPIs and metric definition</li>
+          <li>Storytelling with data</li>
+          <li>A/B test design and basic experimentation</li>
+          <li>Hypothesis testing</li>
+        </ul>
+
+        <div class="mt-6">
+          <h4 class="text-sm text-gray-500 uppercase">Certifications</h4>
+          <ul class="mt-2 text-sm">
+            <li>IBM Data Analytics Certificate</li><br>
+            <li>Business Analytics with Excel : Elementary to Advanced</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="mt-12">
+      <div class="flex items-center justify-between">
+        <h2 class="text-2xl font-semibold">My Projects</h2>
+        <div class="text-sm text-gray-500">Click any project for details</div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <!-- Project Card -->
+        <article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://static.vecteezy.com/system/resources/previews/030/970/524/non_2x/data-warehouse-icon-vector.jpg" alt="Project thumbnail" class="rounded-md mb-4 object-cover w-full h-36" />
+          <h3 class="font-semibold"> SQL-data-warehouse </h3>
+          <p class="text-sm text-gray-500 mt-1">Building a modern datawarehouse with sql server,inculding ETL process,data modeling and analytics.</p>
+          <p class="text-sm text-gray-500 mt-1">The repository is now set to public access.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <a href="https://github.com/naveenkumarg5658-create/SQL-data-warehouse-project" class="text-indigo-600 text-sm">View details</a>
+            <span class="text-xs text-gray-400">SQL</span>
+          </div>
+        </article>
+
+        <article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://e7.pngegg.com/pngimages/130/610/png-clipart-data-quality-data-analysis-business-business-service-people.png" alt="Project thumbnail" class="rounded-md mb-4 object-cover w-full h-36" />
+          <h3 class="font-semibold">Business Data Analysis using Excel</h3>
+          <p class="text-sm text-gray-500 mt-1">This Excel analysis project demonstrates the use of formulas, pivot tables, charts, and dashboards to analyze business data and generate meaningful insights.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <a href="https://docs.google.com/spreadsheets/d/1HWiqyWegN8RSbfM2_qIeBGmaPtMBnAQZ65_gEwCeGOA/edit?usp=sharing" class="text-indigo-600 text-sm">View details</a>
+            <span class="text-xs text-gray-400">Excel</span>
+          </div>
+        </article>
+
+        <article class="bg-white p-4 rounded-xl shadow hover:shadow-lg transition">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b7/6f/df/b76fdfa2-425b-3a81-3a29-898abcdc980e/AppIcon-0-0-1x_U007ephone-0-1-0-sRGB-85-220.png/1200x630wa.jpg" alt="Project thumbnail" class="rounded-md mb-4 object-cover w-full h-36" />
+          <h3 class="font-semibold">A Comprehensive Business Analysis of the JAR App</h3>
+          <p class="text-sm text-gray-500 mt-1">This project was carried out using SQL and Excel to analyze business operations and generate insights that support further application development.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <a href="https://drive.google.com/drive/folders/1l0t2BJhDLTN3QhC56OZyi366NCJ41Wmu?usp=sharing" class="text-indigo-600 text-sm">View details</a>
+            <span class="text-xs text-gray-400">SQL, Excel</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="mt-6 text-center">
+        <a href="#" class="text-sm text-indigo-600">See full project list →</a>
+      </div>
+    </section>
+
+    <!-- RESUME / DOWNLOAD -->
+<section id="resume" class="mt-12 bg-white p-6 rounded-2xl shadow-md">
+  <div class="flex items-center justify-between">
+    <div>
+      <h3 class="text-lg font-semibold">Resume</h3>
+      <p class="text-sm text-gray-500">Download a one-page resume (PDF) with details about my experience and education.</p>
+    </div>
+    <div class="flex gap-3">
+      <!-- Added your real resume PDF here -->
+      <a href="Naveen kumar g (Resume) .pdf" 
+         download="Naveen_Kumar_Resume.pdf"
+         class="px-4 py-2 bg-indigo-600 text-white rounded-lg">
+         Download PDF
+      </a>
+      <a href="#contact" class="px-4 py-2 border rounded-lg">Request more info</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="mt-12 grid md:grid-cols-2 gap-8 items-start">
+      <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h3 class="text-xl font-semibold mb-3">Contact</h3>
+        <p class="text-sm text-gray-600 mb-4">If you are interested in working together or would like a guided walkthrough of my dashboards, kindly get in touch. I would be happy to connect.</p>
+        <ul class="text-sm text-gray-700 space-y-2">
+          <li><strong>Email:</strong> <a href="mailto:naveenkumarg5658@gmail.com" class="text-indigo-600">naveenkumarg5658@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/naveen-kumar-g-3aa74924b/" target="_blank" class="text-indigo-600">linkedin.com/in/naveen-kumar-g</a></li>
+          <li><strong>Location:</strong> Coimbatore, India</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="mt-12 text-center text-sm text-gray-500 pb-8">© " + new Date().getFullYear() + " Naveen Kumar — Built with ♥</footer>
+  </main>
+
+  <script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    navToggle.addEventListener('click', ()=> mobileNav.classList.toggle('hidden'));
+
+    // Simple replacement for footer year since we cannot use server-side templating
+    document.addEventListener('DOMContentLoaded', ()=>{
+      const footer = document.querySelector('footer');
+      if(footer) footer.textContent = '© ' + new Date().getFullYear() + ' Naveen Kumar — Built with ♥';
+    });
+  </script>
+
+</body>
+</html>
